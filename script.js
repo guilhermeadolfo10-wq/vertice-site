@@ -1,7 +1,7 @@
 /* Configuração do site — altere aqui os endereços e contatos. */
 const CONFIG = {
   portalColaborador: "https://portal.verticeshipping.com.br", // portal administrativo (equipe)
-  portalCliente: "https://tracking.verticeshipping.com.br",   // Vértice Tracking (área do cliente)
+  portalCliente: "https://portal.verticeshipping.com.br/tracking", // Vértice Tracking (área do cliente, no mesmo app do portal)
   email: "comercial@verticeshipping.com.br",     // cotações e contato comercial
   emailCarreiras: "contato@verticeshipping.com.br", // Trabalhe conosco (currículos)
   whatsapp: "", // só números com DDI e DDD, ex.: "5547999999999" — vazio esconde o WhatsApp
