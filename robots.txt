@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /acesso.html
+Sitemap: https://verticeshipping.com.br/sitemap.xml
