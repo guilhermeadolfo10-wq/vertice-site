@@ -175,3 +175,21 @@ p { margin: 0 0 1em; }
 @media (max-width: 900px) { .careers { grid-template-columns: 1fr; } }
 
 .access-option span b { color: var(--teal); font-weight: 700; }
+
+/* Topo com foto do navio (Pexels, licença livre para uso comercial) */
+.hero-photo { position: relative; color: #fff; min-height: min(86vh, 760px); display: flex; align-items: center; padding: clamp(72px, 10vw, 128px) 0;
+  background-color: var(--navy);
+  background-image: linear-gradient(90deg, rgba(6,47,95,.94) 0%, rgba(6,47,95,.82) 38%, rgba(6,47,95,.35) 70%, rgba(6,47,95,.15) 100%), image-set(url("/assets/hero-navio.webp") type("image/webp"), url("/assets/hero-navio.jpg") type("image/jpeg"));
+  background-size: cover; background-position: 62% 50%; }
+.hero-photo .hero-grid { grid-template-columns: minmax(0, 640px); }
+.hero-photo h1 { color: #fff; text-shadow: 0 2px 24px rgba(0,0,0,.25); }
+.hero-photo .lead { color: #DCE7F2; }
+.hero-photo .eyebrow { color: #7FE0E5; }
+.hero-photo .hero-points li { color: #fff; }
+.btn-light { background: #fff; color: var(--navy); }
+.btn-light:hover { background: #E8F1F8; }
+.btn-outline-light { border-color: rgba(255,255,255,.55); color: #fff; background: transparent; }
+.btn-outline-light:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+@media (max-width: 760px) {
+  .hero-photo { min-height: 0; background-image: linear-gradient(180deg, rgba(6,47,95,.86) 0%, rgba(6,47,95,.78) 55%, rgba(6,47,95,.62) 100%), image-set(url("/assets/hero-navio-sm.webp") type("image/webp"), url("/assets/hero-navio-sm.jpg") type("image/jpeg")); background-position: 70% 50%; }
+}

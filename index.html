@@ -21,6 +21,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="/assets/hero-navio.webp" type="image/webp" media="(min-width: 761px)" />
+  <link rel="preload" as="image" href="/assets/hero-navio-sm.webp" type="image/webp" media="(max-width: 760px)" />
   <link rel="stylesheet" href="/styles.css" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Organization","name":"Vértice Shipping","url":"https://verticeshipping.com.br/","logo":"https://verticeshipping.com.br/assets/icon-512.png","description":"Logística internacional, financiamento de importações e remessas de câmbio.","areaServed":"BR"}
@@ -53,15 +55,15 @@
   </header>
 
   <main id="conteudo">
-    <section class="hero">
+    <section class="hero hero-photo" aria-label="Apresentação">
       <div class="container hero-grid">
         <div class="hero-text">
           <p class="eyebrow">Logística internacional · Financiamento · Câmbio</p>
           <h1>Sua operação global, conduzida com direção e clareza.</h1>
           <p class="lead">A Vértice Shipping conecta empresas a mercados globais com soluções logísticas seguras, transparentes e acompanhadas de perto — do frete marítimo e aéreo ao financiamento da importação e à remessa de câmbio.</p>
           <div class="hero-cta">
-            <a class="btn btn-primary" href="#contato">Solicitar cotação</a>
-            <a class="btn btn-ghost" href="#servicos">Conheça os serviços</a>
+            <a class="btn btn-light" href="#contato">Solicitar cotação</a>
+            <a class="btn btn-outline-light" href="#servicos">Conheça os serviços</a>
           </div>
           <ul class="hero-points">
             <li>Acompanhamento próximo do início ao fim</li>
@@ -69,24 +71,6 @@
             <li>Visibilidade operacional e financeira por processo</li>
             <li>Rede internacional de agentes</li>
           </ul>
-        </div>
-        <div class="hero-art" aria-hidden="true">
-          <svg viewBox="0 0 520 440" class="routes">
-            <defs>
-              <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#00939C" stop-opacity=".15"/><stop offset="1" stop-color="#00939C"/></linearGradient>
-              <linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#062F5F" stop-opacity=".15"/><stop offset="1" stop-color="#062F5F"/></linearGradient>
-            </defs>
-            <circle cx="300" cy="200" r="168" fill="none" stroke="#062F5F" stroke-opacity=".08" stroke-width="1.5"/>
-            <circle cx="300" cy="200" r="118" fill="none" stroke="#062F5F" stroke-opacity=".08" stroke-width="1.5"/>
-            <path class="r r1" d="M20 380 C 140 360, 220 300, 300 200" stroke="url(#g1)"/>
-            <path class="r r2" d="M30 60 C 150 90, 230 140, 300 200" stroke="url(#g2)"/>
-            <path class="r r3" d="M500 410 C 420 340, 360 280, 300 200" stroke="url(#g1)"/>
-            <path class="r r4" d="M510 40 C 430 90, 360 140, 300 200" stroke="url(#g2)"/>
-            <path class="r r5" d="M10 220 C 120 215, 220 210, 300 200" stroke="url(#g1)"/>
-            <circle cx="300" cy="200" r="11" fill="#C66A22"/>
-            <circle cx="300" cy="200" r="24" fill="none" stroke="#C66A22" stroke-opacity=".35" class="pulse"/>
-            <g class="node"><circle cx="20" cy="380" r="5"/><circle cx="30" cy="60" r="5"/><circle cx="500" cy="410" r="5"/><circle cx="510" cy="40" r="5"/><circle cx="10" cy="220" r="5"/></g>
-          </svg>
         </div>
       </div>
     </section>
