@@ -161,3 +161,15 @@ p { margin: 0 0 1em; }
   .cards, .features, .steps, .values, .form .row, .access-options { grid-template-columns: 1fr; }
   .form { padding: 20px; }
 }
+
+/* Trabalhe conosco */
+.careers-hero { padding-bottom: 24px; }
+.careers { display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; align-items: start; }
+.areas { list-style: none; padding: 0; margin: 20px 0; display: grid; gap: 12px; }
+.areas li { background: var(--mist); border-radius: 12px; padding: 16px 18px; border-left: 3px solid var(--teal); }
+.areas strong { display: block; font-family: Manrope, sans-serif; color: var(--navy); }
+.form h3 { margin-bottom: 0; color: var(--navy); }
+.form .attach-note { margin: 0; font-size: .86rem; background: rgba(0,147,156,.08); border-radius: 10px; padding: 12px 14px; }
+.careers .form { box-shadow: var(--shadow); border: 1px solid var(--line); }
+.nav a[aria-current="page"] { color: var(--teal); }
+@media (max-width: 900px) { .careers { grid-template-columns: 1fr; } }
