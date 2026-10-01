@@ -173,3 +173,5 @@ p { margin: 0 0 1em; }
 .careers .form { box-shadow: var(--shadow); border: 1px solid var(--line); }
 .nav a[aria-current="page"] { color: var(--teal); }
 @media (max-width: 900px) { .careers { grid-template-columns: 1fr; } }
+
+.access-option span b { color: var(--teal); font-weight: 700; }
