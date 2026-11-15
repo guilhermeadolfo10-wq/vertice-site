@@ -24,3 +24,11 @@ p{font-size:17px;line-height:1.6}
 @media(max-width:1100px){.nav>a{font-size:14px}}
 @media(max-width:850px){.nav>a{font-size:16px}}
 @media(max-width:600px){body,p,.solution p,.approach p,.steps p,.segment-list p,.tracking p,.faq details p,.contact-text>p,.detail-grid p{font-size:16px;line-height:1.6}.nav>a{font-size:16px}.hero-lead{font-size:16px}.header-cta,.hero-actions .btn{font-size:14px}.eyebrow,.number,.hero-bottom,.visual-top>span,.journey,.visual-lines{font-size:12px}}
+
+/* Regras finais com especificidade suficiente para vencer os tamanhos locais antigos. */
+@media(min-width:601px){.nav>a{font-size:15px}}
+.form input:not([type=checkbox]),.form select,.form textarea{font-size:16px;line-height:1.5}
+.form label,.form-note,.form-status,.btn,.hero-actions .btn{font-size:15px}
+.hero .eyebrow,.eyebrow{font-size:13px}
+.solution p,.approach p,.steps p,.segment-list p,.tracking p,.faq details p,.contact-text>p,.detail-grid p,.hero .hero-lead{font-size:16px;line-height:1.6}
+@media(max-width:600px){.form input:not([type=checkbox]),.form select,.form textarea,.form label,.form-note,.form-status,.btn,.hero-actions .btn{font-size:15px}.hero .eyebrow,.eyebrow{font-size:12px}.solution p,.approach p,.steps p,.segment-list p,.tracking p,.faq details p,.contact-text>p,.detail-grid p,.hero .hero-lead{font-size:16px;line-height:1.6}}
