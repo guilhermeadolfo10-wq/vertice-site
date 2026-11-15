@@ -4,7 +4,7 @@ const CONFIG = {
   portalCliente: "https://portal.verticeshipping.com.br/tracking", // Vértice Tracking (área do cliente, no mesmo app do portal)
   email: "comercial@verticeshipping.com.br",     // cotações e contato comercial
   emailCarreiras: "contato@verticeshipping.com.br", // Trabalhe conosco (currículos)
-  whatsapp: "", // só números com DDI e DDD, ex.: "5547999999999" — vazio esconde o WhatsApp
+  whatsapp: "554791230451", // WhatsApp comercial, só números com DDI e DDD
 };
 
 const ano = document.getElementById("ano"); if (ano) ano.textContent = String(new Date().getFullYear());
@@ -25,6 +25,17 @@ dialog?.addEventListener("click", e => { if (e.target === dialog) dialog.close()
 document.querySelectorAll('[data-contact="email"] a').forEach(a => { a.href = `mailto:${CONFIG.email}`; a.textContent = CONFIG.email; });
 const wa = document.querySelector('[data-contact="whatsapp"]');
 if (wa && CONFIG.whatsapp) { wa.hidden = false; const a = wa.querySelector("a"); a.href = `https://wa.me/${CONFIG.whatsapp}`; a.textContent = `+${CONFIG.whatsapp.replace(/^(\d{2})(\d{2})(\d{4,5})(\d{4})$/, "$1 ($2) $3-$4")}`; }
+if (CONFIG.whatsapp) {
+  const button = document.createElement("a");
+  button.className = "whatsapp-float";
+  button.href = `https://wa.me/${CONFIG.whatsapp}`;
+  button.target = "_blank";
+  button.rel = "noopener noreferrer";
+  button.setAttribute("aria-label", "Falar com o comercial pelo WhatsApp");
+  button.title = "Falar com o comercial pelo WhatsApp";
+  button.innerHTML = '<svg aria-hidden="true" viewBox="0 0 32 32"><path fill="currentColor" d="M19.11 17.44c-.26-.13-1.51-.74-1.75-.83-.23-.08-.4-.13-.57.13-.17.26-.66.83-.81 1-.15.17-.3.19-.55.06-.26-.13-1.08-.4-2.06-1.27-.76-.68-1.28-1.52-1.43-1.78-.15-.26-.02-.4.11-.53.12-.11.26-.3.38-.45.13-.15.17-.26.26-.43.08-.17.04-.32-.02-.45-.06-.13-.57-1.38-.79-1.89-.21-.5-.42-.43-.57-.44h-.49c-.17 0-.45.06-.68.32-.23.26-.89.87-.89 2.12s.91 2.46 1.04 2.63c.13.17 1.79 2.73 4.33 3.83.61.26 1.08.42 1.45.54.61.19 1.16.17 1.6.1.49-.07 1.51-.62 1.72-1.21.21-.6.21-1.1.15-1.21-.06-.11-.23-.17-.49-.3M16.04 27h-.01a10.94 10.94 0 0 1-5.58-1.53l-.4-.24-4.15 1.09 1.11-4.05-.26-.42A10.94 10.94 0 0 1 5.07 16c0-6.03 4.91-10.94 10.95-10.94 2.92 0 5.67 1.14 7.74 3.21A10.87 10.87 0 0 1 26.97 16c0 6.04-4.91 10.95-10.93 10.95m9.31-20.28A13.1 13.1 0 0 0 16.02 2.8C8.75 2.8 2.84 8.71 2.84 16c0 2.32.61 4.59 1.77 6.58L2.73 29.4l6.98-1.83A13.17 13.17 0 0 0 16.03 29h.01c7.27 0 13.18-5.91 13.18-13.18 0-3.52-1.37-6.83-3.87-9.32"/></svg>';
+  document.body.append(button);
+}
 
 // Menu no celular
 const toggle = document.querySelector(".menu-toggle"); const menu = document.getElementById("menu");
