@@ -15,3 +15,12 @@
 @media(max-width:600px){.header-cta{padding-inline:17px}.solution,.form{border-radius:20px}}
 .whatsapp-float{position:fixed;right:24px;bottom:24px;z-index:40;display:flex;width:56px;height:56px;align-items:center;justify-content:center;border-radius:50%;background:#25d366;color:#fff;box-shadow:0 8px 24px #062f5f3d;transition:transform .2s,box-shadow .2s}.whatsapp-float:hover{transform:translateY(-2px);box-shadow:0 12px 30px #062f5f52}.whatsapp-float svg{width:30px;height:30px}@media(max-width:600px){.whatsapp-float{right:16px;bottom:16px;width:52px;height:52px}.whatsapp-float svg{width:28px;height:28px}}@media(prefers-reduced-motion:reduce){.whatsapp-float{transition:none}.whatsapp-float:hover{transform:none}}
 .utility{display:none}
+/* Tipografia responsiva: corpo 17px/1.6, navegação 15px e microcopy legível. */
+body{font-size:17px;line-height:1.6}
+p{font-size:17px;line-height:1.6}
+.nav>a{font-size:15px}
+.btn,.text-link,.inline-link,.card-link,.faq summary,.form label,.form input:not([type=checkbox]),.form select,.form textarea,.form-note,.form-status,.footer-grid>div>a:not(.footer-brand),.footer-grid h3,.footer-bottom,.eyebrow,.number,.segment-list span,.tracking small,.contact-help>span,.contact-help p,.hero-bottom,.visual-top>span,.journey,.visual-lines{font-size:13px}
+.solution p,.approach p,.steps p,.segment-list p,.tracking p,.faq details p,.contact-text>p,.detail-grid p,.form .check{font-size:16px}
+@media(max-width:1100px){.nav>a{font-size:14px}}
+@media(max-width:850px){.nav>a{font-size:16px}}
+@media(max-width:600px){body,p,.solution p,.approach p,.steps p,.segment-list p,.tracking p,.faq details p,.contact-text>p,.detail-grid p{font-size:16px;line-height:1.6}.nav>a{font-size:16px}.hero-lead{font-size:16px}.header-cta,.hero-actions .btn{font-size:14px}.eyebrow,.number,.hero-bottom,.visual-top>span,.journey,.visual-lines{font-size:12px}}
